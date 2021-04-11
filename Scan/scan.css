@@ -1,0 +1,92 @@
+body{
+    font-family: "SF Fedora";
+    margin: 0px;
+    padding: 0px;
+    background-image: url("Wiki-background.png");
+    background-size: cover;
+    -webkit-background-size:cover;
+}
+header img{
+    width: auto;
+    max-height: 100px;
+}
+header{
+    overflow: hidden;
+    display :block;
+    background-color:rgb(209, 190, 81) ;
+}
+
+@media all and (max-height:600px){
+    header{
+        display:none;
+    }
+}
+
+@media all and (max-width:1250px){
+    header{
+        display: none;
+    }
+}
+
+.nom{
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.logo{
+    float:right;
+    position: relative;
+    margin-top: 10px;
+    padding-right: 10%;
+}
+
+
+
+
+.menu{
+    width: 100%;
+    display: block;
+}
+
+
+.menu > ul{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top :0;
+    background-color: rgb(209, 190, 81);
+    width: 100%;
+    z-index: 10000;
+    overflow:hidden ;
+}
+
+.menu > ul::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.menu > ul > li{
+    float: left;
+    position: relative;
+    margin-left:0;
+}
+
+.menu > ul > li > a{
+    padding: 20px 30px;
+    color: white;
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    background-color:rgb(200, 180, 75);
+}

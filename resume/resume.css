@@ -1,0 +1,157 @@
+body{
+    font-family: "SF Fedora";
+    margin: 0px;
+    padding: 0px;
+    background-image: url("Wiki-background.png");
+/*background-size: cover;*/
+    /*-webkit-background-size:cover;*/
+}
+header img{
+    width: auto;
+    max-height: 100px;
+}
+header{
+    overflow: hidden;
+    display :block;
+    background-color:rgb(209, 190, 81) ;
+}
+
+@media all and (max-height:600px){
+    header{
+        display:none;
+    }
+}
+
+@media all and (max-width:1250px){
+    header{
+        display: none;
+    }
+}
+
+.nom{
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.logo{
+    float:right;
+    position: relative;
+    margin-top: 10px;
+    padding-right: 10%;
+}
+
+
+
+
+.menu{
+    width: 100%;
+    display: block;
+}
+
+
+.menu > ul{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top :0;
+    background-color: rgb(209, 190, 81);
+    width: 100%;
+    z-index: 10000;
+    overflow:hidden ;
+}
+
+.menu > ul::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.menu > ul > li{
+    float: left;
+    position: relative;
+    margin-left:0;
+}
+
+.menu > ul > li > a{
+    padding: 20px 30px;
+    color: white;
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    background-color:rgb(200, 180, 75);
+}
+
+.resume{
+    height: auto;
+    justify-content: center;
+    padding:2%;
+    font-family: Sf Fedora,x-locale-body,sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align-last: center;
+    margin: 1% auto 1% auto;
+}
+
+.parties{
+    height: auto;
+    justify-content: center;
+    padding:2%;
+    font-family: Arial,x-locale-body,sans-serif;
+    font-size: 16px;
+    line-height: 175%;
+    background-color:rgba(79, 161, 217);
+    display: block;
+    border: solid black;
+    color: white;
+    text-align: justify;
+    text-align-last: center;
+    width: 75%;
+    margin: 1% auto 1% auto;
+    border-color: white;
+}
+
+
+.vidéo_titre{
+    padding-right: 25px;
+    padding-top: 10px;
+    height: auto;
+    justify-content: center;
+    text-align: justify;
+    text-align-last: center;
+    width: 75%;
+    margin: 1% auto 1% auto;
+    
+}
+
+.vidéo_titre > h1{
+    text-align: center;
+    color: white;
+    font-size : 23;
+    text-decoration : underline;
+
+}
+.vidéo_titre > p{
+    vertical-align: top;
+    z-index: 200;
+    text-align: center;
+    color: white;
+    background-color:rgba(79, 161, 217) ;
+    border-radius: 10px;
+    margin-top: 0;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid white;
+    width: 200px;
+    height: auto;
+    margin-right: 0px;
+    margin: 1% auto 1% auto;
+}
